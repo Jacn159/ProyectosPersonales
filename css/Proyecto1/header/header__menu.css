@@ -1,0 +1,74 @@
+
+
+.header__item{
+
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: aliceblue;   
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.header__item:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+      .header__menu {
+        display: flex;
+        position: absolute;
+        top: 9.5%;
+        left: 46.7%;
+        background-color: lightskyblue;
+        border-radius: 10px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s;
+      }
+      /* Con esto le doy animación de desvanecimineto */
+      .header__menu-show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+    .header__lista{
+        padding: 10px 0;
+        flex-direction: column;
+    }
+
+
+    .header__item{
+        margin: 1rem 2rem;
+    }
+    .icon{
+        width: 2rem;
+        height: 2rem;
+        margin-top: 20px;
+        margin-right: 15px;
+      }
+}
+@media screen and (min-width: 768px) {
+    .header__menu{
+        all: unset;
+        order: 1;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .header__lista{
+        display: flex;
+    }
+    .icon{
+        order: 2;
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+    .header__lista{
+        flex-direction: row;
+        margin: 0;
+    }
+    .header__item{
+        margin: 0 2rem;
+    }
+}

@@ -4,10 +4,12 @@
     flex-direction: column;    
     width: 65%;
     margin: 20px auto;
-    height: 800px;
+    height: 600px;
+
 }
 form{
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    
 }
