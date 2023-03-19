@@ -18,6 +18,9 @@ const crearCard = ( (event)=>{
     // si no esta la clase lo crea y si esta lo borra
     submit.classList.toggle("formulario__input-active");
     texto.innerText=valor;
+    if (valor=="") {
+        texto.innerText="no seas gracioso chibolo, escribe algo"
+    }
     card.appendChild(imagen);
     card.appendChild(texto);
     padre.appendChild(card);
