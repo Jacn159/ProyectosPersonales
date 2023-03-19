@@ -1,0 +1,29 @@
+
+.header__lista{
+    display: flex;
+}
+.header__item{
+    margin: 0 2rem;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: aliceblue;   
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.header__item:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+@media screen and (min-width: 0) {
+    .header__menu{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header__menu{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+}

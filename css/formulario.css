@@ -1,0 +1,13 @@
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    width: 65%;
+    margin: 20px auto;
+    height: 800px;
+}
+form{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
